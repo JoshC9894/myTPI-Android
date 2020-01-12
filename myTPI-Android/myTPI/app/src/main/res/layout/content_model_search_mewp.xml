@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.jc_designs.mytpi.Appliances.ModelSearchMEWP"
+    tools:showIn="@layout/activity_model_search_mewp">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mewp_model_list"
+        android:layout_gravity="center_horizontal"
+        android:padding="2.5dp"
+        android:layout_below="@+id/textView124"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Please select a MEWP model"
+        android:id="@+id/textView124"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:padding="5dp"
+        android:textAlignment="center"/>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/modelLoading"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

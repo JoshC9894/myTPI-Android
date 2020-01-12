@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Add Inspection"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Fleet No.:"
+        android:id="@+id/textView6"
+        android:layout_below="@+id/textView"
+        android:layout_alignStart="@+id/editFleet"
+        android:layout_marginTop="50dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:id="@+id/addButton"
+        android:textColor="#fff"
+        android:background="@color/colorPrimaryDark"
+        android:layout_below="@+id/editClient"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/editFleet"
+        android:layout_below="@+id/textView6"
+        android:layout_alignStart="@+id/addButton"
+        android:inputType="text"
+        android:capitalize="words" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Serial No.:"
+        android:id="@+id/textView14"
+        android:layout_below="@+id/editFleet"
+        android:layout_alignStart="@+id/editFleet"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/editSerial"
+        android:layout_below="@+id/textView14"
+        android:layout_alignStart="@+id/textView14"
+        android:inputType="text"
+        android:capitalize="words" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Client :"
+        android:id="@+id/textView103"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/editSerial"
+        android:layout_alignStart="@+id/editSerial" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/editClient"
+        android:layout_below="@+id/textView103"
+        android:layout_alignStart="@+id/textView103"
+        android:inputType="text"
+        android:capitalize="words" />
+
+</RelativeLayout>

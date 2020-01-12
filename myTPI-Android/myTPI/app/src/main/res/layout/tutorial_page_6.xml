@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="MEWP Model Search"
+        android:id="@+id/textView157"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:layout_marginTop="20dp" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView11"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textView157"
+        android:src="@drawable/tutorial_mewp"
+        android:layout_above="@+id/textView162" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="A cool feature added to speed up the inspection process."
+        android:id="@+id/textView162"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#fff"
+        android:textAlignment="center" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textView162"
+        android:layout_alignParentBottom="true"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="false"
+            android:id="@+id/fieldRow"
+            android:layout_above="@+id/dropdownRow">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Selecting Models :"
+                android:id="@+id/textView163"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Please check the Number of Persons as this may vary between years."
+                android:id="@+id/textView164"
+                android:layout_below="@+id/textView163"
+                android:layout_centerHorizontal="true"
+                android:textAlignment="textStart"
+                android:textColor="#fff"
+                android:layout_marginTop="5dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignWithParentIfMissing="false"
+            android:layout_centerInParent="true"
+            android:id="@+id/dropdownRow"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Adding Models :"
+                android:id="@+id/textView165"
+                android:textColor="#fff"
+                android:layout_below="@+id/textView164"
+                android:layout_alignStart="@+id/textView164"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="If you cannot find the model required, please feel free to add it to our library."
+                android:id="@+id/textView166"
+                android:textAlignment="textStart"
+                android:textColor="#fff"
+                android:layout_below="@+id/textView165"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="false"
+            android:id="@+id/savingRow"
+            android:layout_below="@+id/dropdownRow">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Limitations :"
+                android:id="@+id/textView167"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:layout_below="@+id/textView166"
+                android:layout_alignStart="@+id/textView166" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="To access this feature, you must have a stable internet connection."
+                android:id="@+id/textView168"
+                android:textAlignment="textStart"
+                android:textColor="#fff"
+                android:layout_below="@+id/textView167"
+                android:layout_alignStart="@+id/textView167"
+                android:layout_marginTop="5dp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

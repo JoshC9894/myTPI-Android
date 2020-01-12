@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jc_designs.mytpi.Authorisation.Login"
+    android:background="@color/colorPrimaryDark"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Already have an account?"
+        android:id="@+id/loginRef"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#fff"
+        android:textAlignment="center"
+        android:padding="10dp"
+        android:layout_marginBottom="5dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:id="@+id/continueButton"
+        android:layout_above="@+id/loginRef"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:textColor="@color/colorAccent"
+        android:background="#fff" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView5"
+        android:src="@drawable/extended_logo"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/tableLayout2"
+        android:layout_marginBottom="25dp"
+        android:padding="5dp" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/tableLayout2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Full Name :"
+            android:id="@+id/textView101"
+            android:textColor="#ffffff"
+            android:layout_above="@+id/fullNameField"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/fullNameField"
+            android:backgroundTint="#f5f5f5"
+            android:layout_above="@+id/textView99"
+            android:layout_alignParentEnd="true"
+            android:textAlignment="center"
+            android:inputType="text"
+            android:capitalize="words"
+            android:textColor="#fff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Email :"
+            android:id="@+id/textView99"
+            android:textColor="#ffffff"
+            android:layout_above="@+id/emailField"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/emailField"
+            android:backgroundTint="#f5f5f5"
+            android:layout_above="@+id/textView97"
+            android:layout_alignParentEnd="true"
+            android:textAlignment="center"
+            android:inputType="textEmailAddress"
+            android:textColor="#fff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Password :"
+            android:id="@+id/textView97"
+            android:textColor="#ffffff"
+            android:layout_above="@+id/passwordField"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/passwordField"
+            android:backgroundTint="#f5f5f5"
+            android:layout_above="@+id/textView32"
+            android:layout_alignParentStart="true"
+            android:textAlignment="center"
+            android:textColor="#fff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Confirm Password :"
+            android:id="@+id/textView32"
+            android:layout_above="@+id/password2Field"
+            android:layout_alignParentStart="true"
+            android:textColor="#ffffff"
+            android:layout_marginTop="10dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/password2Field"
+            android:layout_above="@+id/continueButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="25dp"
+            android:backgroundTint="#f5f5f5"
+            android:textAlignment="center"
+            android:textColor="#fff" />
+    </TableLayout>
+
+</RelativeLayout>

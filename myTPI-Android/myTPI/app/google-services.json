@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "537345183652",
+    "firebase_url": "https://mytpi-97ad0.firebaseio.com",
+    "project_id": "mytpi-97ad0",
+    "storage_bucket": "mytpi-97ad0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:537345183652:android:2acca8b6e48669ce",
+        "android_client_info": {
+          "package_name": "com.jc_designs.mytpi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "537345183652-c9usshklca1sksp179lfhlf5vu92af6b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQMeWEYbw7nXK8KQnEhoAt6dOKrNdTVU8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

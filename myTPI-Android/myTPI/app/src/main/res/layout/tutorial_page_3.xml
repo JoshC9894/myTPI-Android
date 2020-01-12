@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Inspections List"
+        android:id="@+id/textView157"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:layout_marginTop="20dp" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView10"
+        android:layout_below="@+id/textView157"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/tutorial_list"
+        android:layout_above="@+id/textView161" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="To carry out or review the inspection, simply press it to proceed to the checklist."
+        android:id="@+id/textView161"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:layout_alignStart="@+id/relativeLayout17"
+        android:layout_centerInParent="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout17"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/textView161">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/passRow"
+            android:layout_above="@+id/failRow">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/imageView7"
+                android:src="@drawable/pass_icon"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text=" Displayed if the equipment is Satisfactory."
+                android:id="@+id/textView158"
+                android:layout_alignTop="@+id/imageView7"
+                android:layout_above="@+id/imageView8"
+                android:layout_alignParentEnd="true"
+                android:layout_toEndOf="@+id/imageView7"
+                android:textColor="#fff"
+                android:gravity="center_vertical"
+                android:textAlignment="center" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/failRow"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/imageView8"
+                android:src="@drawable/fail_icon"
+                android:layout_below="@+id/imageView7"
+                android:layout_alignStart="@+id/imageView7"
+                android:layout_centerInParent="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Displayed if the equipment is Unsatisfactory."
+                android:id="@+id/textView159"
+                android:textColor="#fff"
+                android:gravity="center_vertical"
+                android:layout_alignTop="@+id/imageView8"
+                android:layout_alignStart="@+id/textView158"
+                android:layout_above="@+id/imageView9"
+                android:layout_centerInParent="true"
+                android:textAlignment="center" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/incompleteRow"
+            android:layout_below="@+id/failRow">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/imageView9"
+                android:src="@drawable/incomplete_icon"
+                android:layout_below="@+id/imageView8"
+                android:layout_alignStart="@+id/imageView8" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Displayed if the inspection is Incomplete."
+                android:id="@+id/textView160"
+                android:textColor="#fff"
+                android:gravity="center_vertical"
+                android:layout_alignTop="@+id/imageView9"
+                android:layout_alignStart="@+id/textView158"
+                android:layout_alignBottom="@+id/imageView9"
+                android:textAlignment="center" />
+
+        </TableRow>
+
+    </RelativeLayout>
+
+</RelativeLayout>

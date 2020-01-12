@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.jc_designs.mytpi.Review"
+    android:background="#fff">
+
+    <ImageView
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:id="@+id/imageView12"
+        android:src="@drawable/review_icon"
+        android:layout_below="@+id/textView81"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/textView80" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Report a Bug"
+        android:id="@+id/reviewButton3"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:textColor="#fff"
+        android:background="@color/colorAccentDark" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="General Feedback"
+        android:id="@+id/reviewButton2"
+        android:layout_above="@+id/reviewButton3"
+        android:layout_centerHorizontal="true"
+        android:textColor="#fff"
+        android:background="@color/colorPrimaryDark"
+        android:layout_marginBottom="10dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="App Store Review"
+        android:id="@+id/reviewButton1"
+        android:layout_above="@+id/reviewButton2"
+        android:layout_centerHorizontal="true"
+        android:textColor="#fff"
+        android:background="@color/colorPrimary"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="If you have found any problems or ways to improve this app, please get in touch and let us know."
+        android:id="@+id/textView80"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textColor="#212121" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Send us your Feedback"
+        android:id="@+id/textView81"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#212121"
+        android:textStyle="bold"
+        android:textAlignment="center" />
+</RelativeLayout>
